@@ -5,6 +5,7 @@ pip install scipy
 pip install sklearn
 
 참고 : github/lovit/kr-wordrank
+작업참고 : https://github.com/lovit/KR-WordRank/blob/master/tutorials/krwordrank_word_and_keyword_extraction.ipynb
 '''
 
 # 텍스트 파일 가져와서 전처리하기
@@ -19,7 +20,7 @@ def get_texts_scores(fname):
         texts, scores = zip(*docs)
         return list(texts), list(scores)
 
-# La La Land 라라랜드 텍스트 파일 
+# La La Land 라라랜드 텍스트 파일
 fname = '/Users/mac/Documents/coding_python/python_WordCloud/data/134963.txt'
 texts, scores = get_texts_scores(fname)
 
